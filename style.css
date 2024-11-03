@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container-principal {
+    width: 600px;
+}
+
+.dados {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inputs label {
+    font-size: 14px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.lista {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.lista-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.transacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.transacao:last-child {
+    border-bottom: none;
+}
+
+.transacao .tipo-entrada {
+    color: green;
+}
+
+.transacao .tipo-saida {
+    color: red;
+}
+
+.transacao button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.transacao .tipo-entrada::before {
+    content: "\f062";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: green;
+    margin-right: 5px;
+}
+
+.transacao .tipo-saida::before {
+    content: "\f063";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: red;
+    margin-right: 5px;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <title>Fluxo de Caixa</title>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container-principal">
+        <div class="dados">
+            <section class="box" id="entrada">
+                <h1>Entradas: R$</h1>
+                <p id="valor_entrada">0.00</p>
+            </section>
+
+            <section class="box" id="saida">
+                <h1>Saídas: R$</h1>
+                <p id="valor_saida">0.00</p>
+            </section>
+
+            <section class="box" id="total">
+                <h1>Total: R$</h1>
+                <p id="valor_total">0.00</p>
+            </section>
+        </div>
+
+        <div class="inputs">
+            <label for="descricao">Descrição:</label>
+            <input type="text" name="descricao" id="descricao" maxlength="20">
+            <label for="valor">Valor:</label>
+            <input type="number" name="valor" id="valor" min="0">
+            <label for="tipo">Tipo:</label>
+            <select name="tipo" id="tipo">
+                <option value="entrada">Entrada</option>
+                <option value="saida">Saída</option>
+            </select>
+            <button id="incluir">Incluir</button>
+        </div>
+            <div id="transacoes">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
